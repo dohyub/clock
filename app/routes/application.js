@@ -9,6 +9,6 @@ export default Ember.Route.extend({
       var h=time.getHours();
       document.getElementById('clock').innerHTML=h + " : " + m + " : " + s;
     }
-    return setInterval(time);
+    setInterval(time,1000);
   }
 });
